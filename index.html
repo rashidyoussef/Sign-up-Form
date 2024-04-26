@@ -23,42 +23,45 @@
             <section class="divform">
                 <p>Let's do this!</p>
                 <form action="" id="create-acc">
+
                     <div class="formelem">
                     <label for="firstname">
                         <span>FIRST NAME</span>
-                        <input type="text" name="user_name" id="firstname" required>
+                        <input type="text" name="user_name" id="firstname" placeholder="Power" 
+                        pattern="[A-Za-z]+" title="Just letters dude" required>
                     </label>
                     </div>
 
                     <div class="formelem">
                     <label for="lastname">
                         <span>LAST NAME</span>
-                        <input type="text" name="user_last" id="lastname" required>
+                        <input type="text" name="user_last" id="lastname" placeholder="Ranger" 
+                        pattern="[A-Za-z]+" title="Just letters dude" required>
                     </label>
                 </div>
                     <div class="formelem">
                     <label for="email">
                         <span>EMAIL</span>
-                        <input type="email" name="user_mail" id="email" required>
+                        <input type="email" name="user_mail" id="email" placeholder="mojon@duro.com" required>
                     </label>
                 </div>
                     <div class="formelem">
                     <label for="phonenumber">
                         <span>PHONE NUMBER</span>
-                        <input type="tel" name="user_tel" id="phonenumber" required>
+                        <input type="tel" name="user_tel" id="phonenumber" pattern="[0-9]*" minlength="10" maxlength="10" placeholder="999 123 4567" required>
                     </label>
                 </div>
                     <div class="divpass">
                     <label for="pwd">
                         <span>PASSWORD</span>
-                        <input type="password" name="user_pwd" id="pwd">
+                        <input type="password" name="user_pwd" id="pwd" placeholder="********" required>
                     </label>
                     </div>
 
                     <div class="divpass">
                     <label for="confirmpwd">
                         <span>CONFIRM PASSWORD</span>
-                        <input type="password" name="user_confirm" id="confirmpwd">
+                        <input type="password" name="user_confirm" id="confirmpwd" placeholder="********" required>
                     </label>
                     </div>
 
