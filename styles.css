@@ -1,0 +1,69 @@
+ :root {
+    --section-width: 100%
+ }
+ 
+ * {
+    font-family: 'roboto';
+ }
+
+ body {
+    display: flex;
+    flex-direction: row;
+ }
+
+header {
+    min-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    overflow:inherit
+}
+
+ header img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .titles p,.divform p {
+    font-weight: 600;
+    margin:2px;
+    line-height: 1.5rem;
+ }
+
+ form {
+    display: flex;
+    gap: 2em;
+    flex-direction: row;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 215px;
+    width:100%;
+ }
+
+ .divform{
+    display:flex;
+    width:100%;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: white;
+    padding-top:0;
+ }
+
+ .titles,.useraction{
+    background-color: rgb(240, 240, 240);
+ }
+
+ section {
+    padding: 2rem;
+ }
+
+ .formelem,.divpass  {
+    display:flex;
+    width:185px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+ }
+
+ .titles {
+    padding-top: 80px;
+    margin:1px;
+ }

@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+    <header>
+<img src="images/stoic.jpg">
+    </header>
+    <main>
+            <section class="titles">
+            <p>This is not a real online service! You know
+                you need something like this in your life 
+                to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <br>
+            <p>You <em>know</em> you want to </p>
+            </section>
+
+            <section class="divform">
+                <p>Let's do this!</p>
+                <form action="" id="create-acc">
+                    <div class="formelem">
+                    <label for="firstname">
+                        <span>FIRST NAME</span>
+                        <input type="text" name="user_name" id="firstname" required>
+                    </label>
+                    </div>
+
+                    <div class="formelem">
+                    <label for="lastname">
+                        <span>LAST NAME</span>
+                        <input type="text" name="user_last" id="lastname" required>
+                    </label>
+                </div>
+                    <div class="formelem">
+                    <label for="email">
+                        <span>EMAIL</span>
+                        <input type="email" name="user_mail" id="email" required>
+                    </label>
+                </div>
+                    <div class="formelem">
+                    <label for="phonenumber">
+                        <span>PHONE NUMBER</span>
+                        <input type="tel" name="user_tel" id="phonenumber" required>
+                    </label>
+                </div>
+                    <div class="divpass">
+                    <label for="pwd">
+                        <span>PASSWORD</span>
+                        <input type="password" name="user_pwd" id="pwd">
+                    </label>
+                    </div>
+
+                    <div class="divpass">
+                    <label for="confirmpwd">
+                        <span>CONFIRM PASSWORD</span>
+                        <input type="password" name="user_confirm" id="confirmpwd">
+                    </label>
+                    </div>
+
+                </form>
+            </section>
+
+            <section class="useraction">
+                <button type="submit" form="create-acc">Create Account</button>
+                <p>
+                    <span>Already have an account?</span>
+                    <span><a href="">Log in</a></span>
+                </p>
+            </section>
+    </main>
+ </body>
+ </html>
