@@ -15,17 +15,13 @@ header {
     min-width: 300px;
     width: 100%;
     max-width: 500px;
-    overflow:inherit
+    overflow:inherit;
+    background-image: url(images/stoic.jpg);
 }
-
- header img{
-    width: 100%;
-    height: 100%;
- }
 
  .titles p,.divform p {
     font-weight: 600;
-    margin:2px;
+
     line-height: 1.5rem;
  }
 
@@ -65,5 +61,4 @@ header {
 
  .titles {
     padding-top: 80px;
-    margin:1px;
  }
