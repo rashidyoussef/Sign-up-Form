@@ -16,7 +16,7 @@
 header {
     min-width: 400px;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     overflow:hidden;
     background-image: url(images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
     background-repeat: repeat;
@@ -26,7 +26,7 @@ header {
 
  .titles p,.divform p {
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 1.5rem;    
  }
 
 .forelem {
@@ -165,4 +165,9 @@ main {
 
 .titles p{
    font-size: 1.3rem;
+}
+
+.titles,
+.useraction{
+   max-width: 1200px;
 }
