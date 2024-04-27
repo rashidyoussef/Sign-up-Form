@@ -6,45 +6,60 @@
     font-family: 'roboto';
  }
 
- body {
-    display: flex;
-    flex-direction: row;
- }
+ html, body {
+   height: 100%; /* Establecer el tamaño de la página al 100% del viewport */
+   margin: 0; /* Eliminar los márgenes predeterminados */
+   padding: 0; /* Eliminar los rellenos predeterminados */
+   display: flex;
+}
 
 header {
-    min-width: 300px;
+    min-width: 400px;
     width: 100%;
     max-width: 500px;
-    overflow:inherit;
-    background-image: url(images/stoic.jpg);
-    background-repeat: no-repeat;
-    background-color: black;
-    background-size:auto
+    overflow:hidden;
+    background-image: url(images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+    background-repeat: repeat;
+    background-size:cover;
+    height: 100%;
 }
 
  .titles p,.divform p {
     font-weight: 600;
-
     line-height: 1.5rem;
  }
+
+.forelem {
+   position: relative;
+}
+
+.divform span {
+   text-align: center;
+   display:flex;
+   justify-content: center;
+}
 
  form {
     display: flex;
     gap: 2em;
     flex-direction: row;
-    align-content: space-evenly;
     flex-wrap: wrap;
-    min-width: 215px;
-    width:100%;
+    max-width: 800px; 
+    flex:1;   
+    
  }
 
  .divform{
     display:flex;
-    width:100%;
-    flex-grow: 1;
     flex-direction: column;
     background-color: white;
-    padding-top:0;
+    padding-top:30px;
+    height:auto;
+    align-items: flex-start;
+    max-width:800px;
+    flex:1;
+    flex-wrap: wrap;
+
  }
 
  .titles,.useraction{
@@ -53,17 +68,14 @@ header {
 
  section {
     padding: 2rem;
+    display:flex;
+    flex-direction: column;
  }
 
- .formelem,.divpass  {
-    display:flex;
-    width:185px;
-    flex-direction: column;
-    flex-wrap: nowrap;
- }
 
  .titles {
     padding-top: 80px;
+    flex:0.5
  }
 
 .divform input[type="text"],
@@ -98,15 +110,21 @@ header {
     width:auto;
     height:40px;
     border-radius: 10px;
+    font-size: 1.3rem;
  }
+
 
 
  a:visited {
     color:rgb(52, 0, 100)
  }
 
+ .useraction span {
+   font-size: 1.3rem;
+ }
  .useraction a:link{
     color:blue;
+    font-size: 1.2rem;
 }
 
 .divform input:hover {
@@ -117,4 +135,34 @@ button:hover{
     background-color: rgb(27, 0, 88);
     border: solid white 2px;
     font-weight: bold;
+}
+.divform label::after {
+   
+}
+
+.useraction {
+   display:flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   justify-self: flex-end;
+   flex:0.5;
+}
+
+main {
+   display:flex;
+   flex-direction: column;
+}
+
+*::placeholder{
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+.divform p {
+   font-size: 1.8rem;
+   font-style: italic;
+}
+
+.titles p{
+   font-size: 1.3rem;
 }
