@@ -56,7 +56,7 @@ header {
     padding-top:30px;
     height:auto;
     align-items: flex-start;
-    max-width:800px;
+    max-width:100vw;
     flex:1;
     flex-wrap: wrap;
 
@@ -113,8 +113,6 @@ header {
     font-size: 1.3rem;
  }
 
-
-
  a:visited {
     color:rgb(52, 0, 100)
  }
@@ -135,9 +133,6 @@ button:hover{
     background-color: rgb(27, 0, 88);
     border: solid white 2px;
     font-weight: bold;
-}
-.divform label::after {
-   
 }
 
 .useraction {
@@ -169,5 +164,34 @@ main {
 
 .titles,
 .useraction{
-   max-width: 1200px;
+   max-width: 100vw;
 }
+
+.divform input[type="text"]:user-invalid:not(:placeholder-shown) + span::after {
+   color: white;
+   background-color: red;
+   width: 185px;
+   content: "Please enter a valid name bro";
+   font-size: 0.9rem;
+   margin-top: 3px;
+   border-radius: 10px;
+ }
+
+ .divform input[type="email"]:invalid:not(:placeholder-shown) + span::after{
+   color: white;
+   background-color: red;
+   width: 185px;
+   content: "Enter a valid email bro";
+   font-size: 0.9rem;
+   margin-top: 3px;
+   border-radius: 10px;
+ }
+ .divform input[type="tel"]:invalid:not(:placeholder-shown) + span::after{
+   color: white;
+   background-color: red;
+   width: 185px;
+   content: "Enter a valid phone number (?)";
+   font-size: 0.9rem;
+   margin-top: 3px;
+   border-radius: 10px;
+ }
